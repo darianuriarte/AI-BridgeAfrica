@@ -26,7 +26,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
     // Fetch current projects from the API
     const fetchCurrentProjects = async () => {
       try {
-        const response = await fetch('http://http://52.2.171.100:5001/api/settings/currentProjects');
+        const response = await fetch('http://52.2.171.100:5001/api/settings/currentProjects');
         if (!response.ok) {
           throw new Error('Failed to fetch current projects');
         }

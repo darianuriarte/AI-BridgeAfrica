@@ -14,7 +14,7 @@ const Footer = () => {
     // Fetch the footer data from the API
     const fetchFooterData = async () => {
       try {
-        const response = await fetch('http://http://52.2.171.100:5001/api/pages/Footer');
+        const response = await fetch('http://52.2.171.100:5001/api/pages/Footer');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
