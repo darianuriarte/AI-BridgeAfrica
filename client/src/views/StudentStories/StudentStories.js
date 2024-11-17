@@ -18,7 +18,7 @@ const StudentStories = () => {
     // Replace with your actual API endpoint
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:5001/api/pages/${pageName}`);
+        const response = await fetch(`http://52.2.171.100:5001/api/pages/${pageName}`);
         if (!response.ok) {
           throw new Error('Failed to fetch page data');
         }

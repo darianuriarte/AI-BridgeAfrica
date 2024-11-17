@@ -17,7 +17,7 @@ const Sidebar = ({ open, variant, onClose }) => {
       try {
         // Fetch current projects
         const currentProjectsResponse = await fetch(
-          'http://localhost:5001/api/settings/currentProjects',
+          'http://http://52.2.171.100:5001/api/settings/currentProjects',
         );
         const currentProjectsData = await currentProjectsResponse.json();
         const currentProjects = currentProjectsData.currentProjects;
@@ -29,7 +29,7 @@ const Sidebar = ({ open, variant, onClose }) => {
 
         // Fetch past programs
         const pastProgramsResponse = await fetch(
-          'http://localhost:5001/api/settings/pastPrograms',
+          'http://http://52.2.171.100:5001/api/settings/pastPrograms',
         );
         const pastProgramsData = await pastProgramsResponse.json();
         const pastPrograms = pastProgramsData.pastPrograms;
@@ -41,7 +41,7 @@ const Sidebar = ({ open, variant, onClose }) => {
 
         // Fetch student stories
         const studentStoriesResponse = await fetch(
-          'http://localhost:5001/api/settings/studentStories',
+          'http://http://52.2.171.100:5001/api/settings/studentStories',
         );
         const studentStoriesData = await studentStoriesResponse.json();
         const studentStories = studentStoriesData.studentStories;
@@ -53,7 +53,7 @@ const Sidebar = ({ open, variant, onClose }) => {
 
         // Fetch Apply Link
         const navBarLinkResponse = await fetch(
-          'http://localhost:5001/api/settings/navBarLink',
+          'http://http://52.2.171.100:5001/api/settings/navBarLink',
         );
         const navBarLinkData = await navBarLinkResponse.json();
         setNavBarApplyLink(navBarLinkData.navBarApplyLink);

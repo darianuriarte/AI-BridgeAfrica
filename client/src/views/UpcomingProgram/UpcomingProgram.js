@@ -23,7 +23,7 @@ const UpcomingProgram = () => {
     const fetchPageData = async () => {
       try {
         const response = await fetch(
-          'http://localhost:5001/api/pages/UpcomingProgram'
+          'http://http://52.2.171.100:5001/api/pages/UpcomingProgram'
         );
         if (!response.ok) {
           throw new Error('Failed to fetch page data');

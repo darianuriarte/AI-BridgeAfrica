@@ -25,7 +25,7 @@ const AboutUs = () => {
   useEffect(() => {
     const fetchPageData = async () => {
       try {
-        const response = await fetch('http://localhost:5001/api/pages/AboutUs');
+        const response = await fetch('http://52.2.171.100:5001/api/pages/AboutUs');
         if (!response.ok) {
           throw new Error('Failed to fetch page data');
         }
