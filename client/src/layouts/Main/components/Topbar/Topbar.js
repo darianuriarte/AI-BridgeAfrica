@@ -26,7 +26,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
     // Fetch current projects from the API
     const fetchCurrentProjects = async () => {
       try {
-        const response = await fetch('http://52.2.171.100:5001/api/settings/currentProjects');
+        const response = await fetch('/api/settings/currentProjects');
         if (!response.ok) {
           throw new Error('Failed to fetch current projects');
         }
@@ -47,7 +47,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
     // Fetch Past Programs from API
     const fetchPastPrograms = async () => {
       try {
-        const response = await fetch('http://52.2.171.100:5001/api/settings/pastPrograms');
+        const response = await fetch('/api/settings/pastPrograms');
         if (!response.ok) {
           throw new Error('Failed to fetch past programs');
         }
@@ -67,7 +67,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
     // Fetch Student Stories from API
     const fetchStudentStories = async () => {
       try {
-        const response = await fetch('http://52.2.171.100:5001/api/settings/studentStories');
+        const response = await fetch('/api/settings/studentStories');
         if (!response.ok) {
           throw new Error('Failed to fetch student stories');
         }
@@ -88,7 +88,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
     
     const fetchNavBarApplyLink = async () => {
       try {
-        const response = await fetch('http://52.2.171.100:5001/api/settings/navBarLink');
+        const response = await fetch('/api/settings/navBarLink');
         if (!response.ok) {
           throw new Error('Failed to fetch navBarApplyLink');
         }

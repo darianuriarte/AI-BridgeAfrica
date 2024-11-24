@@ -23,7 +23,7 @@ const LandingPage = () => {
   useEffect(() => {
     const fetchPageData = async () => {
       try {
-        const response = await fetch('http://52.2.171.100:5001/api/pages/LandingPage');
+        const response = await fetch('/api/pages/LandingPage');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
